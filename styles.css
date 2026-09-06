@@ -113,7 +113,7 @@ body {
     background-color: #764ba2;
 }
 
-/* Seção Projetos */
+/* Seção Projetos 3D */
 .projetos {
     padding: 3rem 0;
     margin-bottom: 3rem;
@@ -188,6 +188,150 @@ body {
     font-style: italic;
 }
 
+/* Seção Arduino */
+.arduino {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    padding: 3rem 0;
+    margin-bottom: 3rem;
+}
+
+.arduino h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.grid-arduino {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.arduino-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.arduino-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.arduino-imagem {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background-color: #e0e0e0;
+}
+
+.arduino-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.arduino-card:hover .arduino-imagem img {
+    transform: scale(1.08);
+}
+
+.arduino-info {
+    padding: 2rem;
+}
+
+.arduino-info h3 {
+    color: #f5576c;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.arduino-info p {
+    color: #555;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.tecnologia {
+    display: block;
+    color: #f5576c;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+/* Seção Lego */
+.lego {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    padding: 3rem 0;
+    margin-bottom: 3rem;
+}
+
+.lego h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.grid-lego {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.lego-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.lego-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.lego-imagem {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background-color: #e0e0e0;
+}
+
+.lego-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.lego-card:hover .lego-imagem img {
+    transform: scale(1.08);
+}
+
+.lego-info {
+    padding: 2rem;
+}
+
+.lego-info h3 {
+    color: #00f2fe;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.lego-info p {
+    color: #555;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
 /* Seção Sobre */
 .sobre {
     background: white;
@@ -244,6 +388,8 @@ body {
 
     .nav-links {
         gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .hero-content h2 {
@@ -258,8 +404,23 @@ body {
         grid-template-columns: 1fr;
     }
 
+    .grid-arduino {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-lego {
+        grid-template-columns: 1fr;
+    }
+
     .projetos h2,
+    .arduino h2,
+    .lego h2,
     .sobre h2 {
         font-size: 1.8rem;
+    }
+
+    .arduino-card,
+    .lego-card {
+        margin-bottom: 1rem;
     }
 }
